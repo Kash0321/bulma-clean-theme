@@ -32,8 +32,7 @@
         document.getElementById("barraaceptacion").style.display="none";
     }
 
-    var gcResult = getCookie('tiendaaviso');
-    if(gcResult != "1") {
+    if(getCookie('tiendaaviso') != "1") {
         document.getElementById("barraaceptacion").style.display="block";
     }
 </script>
