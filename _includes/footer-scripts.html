@@ -28,11 +28,12 @@
     }
 
     function PonerCookie() {
-        setCookie('tiendaaviso','1',365);
+        setCookie('tiendaaviso', '1', 365);
         document.getElementById("barraaceptacion").style.display="none";
     }
 
-    if(getCookie('tiendaaviso')!="1") {
+    var gcResult = getCookie('tiendaaviso');
+    if(gcResult != "1") {
         document.getElementById("barraaceptacion").style.display="block";
     }
 </script>
