@@ -6,12 +6,12 @@
                 <img src="{{ post.image }}" alt="{{ post.title }}">
             </div>
             {% else %}
-            <header class="card-header">
+            <header class="card-header" style="padding: 0px">
                 <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
             </header>
             {% endif %}
         </div>
-        <div class="column">    
+        <div class="column" style="padding: 0px">    
             <div class="card-content">
                 <div class="content">
                     {% if post.image %}
